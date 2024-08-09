@@ -187,7 +187,7 @@ class EEGrasp():
 
     def learn_graph(self, Z=None, a=0.1, b=0.1,
                     gamma=0.04, maxiter=1000, w_max=np.inf,
-                    mode='Average', data=None):
+                    mode='Average', data=None, **kwargs):
         """ Learns graph using PyGSP2.
         %(eegrasp.graph.learn_graph)
         """
@@ -195,7 +195,7 @@ class EEGrasp():
             data = self.data
 
         from .graph import learn_graph
-        return learn_graph(Z=Z, a=a, b=b, gamma=gamma, maxiter=maxiter, w_max=w_max, mode=mode, data=data)
+        return learn_graph(Z=Z, a=a, b=b, gamma=gamma, maxiter=maxiter, w_max=w_max, mode=mode, data=data, **kwargs)
 
     def plot(self, graph=None, signal=None, coordinates=None, labels=None, montage=None,
              colorbar=True, axis=None, clabel='Edge Weights', kind='topoplot', show_names=True, **kwargs):

@@ -77,7 +77,7 @@ def compute_graph(W=None, epsilon=.5, sigma=.1, distances=None, graph=None, coor
 
 def learn_graph(Z=None, a=0.1, b=0.1,
                 gamma=0.04, maxiter=1000, w_max=np.inf,
-                mode='Average', data=None):
+                mode='Average', data=None, **kwargs):
     """Learn the graph based on smooth signals.
 
     Parameters
@@ -138,7 +138,7 @@ def learn_graph(Z=None, a=0.1, b=0.1,
                 Z = euc_dist(d)
 
                 W = graph_learning.graph_log_degree(
-                    Z, a, b, gamma=gamma, w_max=w_max, maxiter=maxiter)
+                    Z, a, b, gamma=gamma, w_max=w_max, maxiter=maxiter, **kwargs)
                 W[W < 1e-5] = 0
 
                 Ws[i, :, :] = W.copy()
@@ -154,7 +154,7 @@ def learn_graph(Z=None, a=0.1, b=0.1,
 
             Z = np.mean(Zs, axis=0)
             W = graph_learning.graph_log_degree(
-                Z, a, b, gamma=gamma, w_max=w_max, maxiter=maxiter)
+                Z, a, b, gamma=gamma, w_max=w_max, maxiter=maxiter, **kwargs)
             W[W < 1e-5] = 0
 
             return W, Z
@@ -162,7 +162,7 @@ def learn_graph(Z=None, a=0.1, b=0.1,
         Z = euc_dist(data)
 
         W = graph_learning.graph_log_degree(
-            Z, a, b, gamma=gamma, w_max=w_max, maxiter=maxiter)
+            Z, a, b, gamma=gamma, w_max=w_max, maxiter=maxiter, **kwargs)
         W[W < 1e-5] = 0
 
         return W, Z
