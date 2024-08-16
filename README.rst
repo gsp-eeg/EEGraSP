@@ -5,7 +5,7 @@ EEGraSP: EEG GRaph Signal Processing
 +---------------------------------------------------+
 ||doc|   |pypi|   |conda|   |pyversions|   |license||
 +---------------------------------------------------+
-||release|   |testing|   |ruff|  |yapf|  |codespell| |isort||
+||release|   |testing|   |ruff|  |yapf|             |
 +---------------------------------------------------+
 
 
