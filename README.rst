@@ -2,40 +2,56 @@
 EEGraSP: EEG GRaph Signal Processing
 =========================================
 
++------------------------------------------------------------+
+||doc|   |pypi|   |conda|   |pyversions|   |license|         |
++------------------------------------------------------------+
+||release|   |testing|   |ruff|  |yapf|  |codespell|  |isort||
++------------------------------------------------------------+
 
-.. image:: https://img.shields.io/readthedocs/eegrasp
+
+.. |doc| image:: https://img.shields.io/readthedocs/eegrasp
    :target: https://eegrasp.readthedocs.io
    :alt: Read the Docs
 
-.. image:: https://img.shields.io/pypi/v/eegrasp
+.. |pypi| image:: https://img.shields.io/pypi/v/eegrasp
    :target: https://pypi.org/project/eegrasp
    :alt: PyPI - Version
    
-.. image:: https://img.shields.io/conda/v/conda-forge/eegrasp
+.. |conda| image:: https://img.shields.io/conda/v/conda-forge/eegrasp
    :target: https://anaconda.org/conda-forge/eegrasp
    :alt: Conda Version
    
-.. image:: https://img.shields.io/github/license/gsp-eeg/EEGraSP
+.. |license| image:: https://img.shields.io/github/license/gsp-eeg/EEGraSP
    :target: https://github.com/gsp-eeg/eegrasp/blob/main/LICENSE
    :alt: GitHub License
 
-.. image:: https://img.shields.io/pypi/pyversions/eegrasp
+.. |pyversions| image:: https://img.shields.io/pypi/pyversions/eegrasp
    :target: https://pypi.org/project/eegrasp
    :alt: PyPI - Python Version
 
-.. image:: https://img.shields.io/github/actions/workflow/status/gsp-eeg/EEGraSP/release-pypi.yml?label=release
+.. |release| image:: https://img.shields.io/github/actions/workflow/status/gsp-eeg/EEGraSP/release-pypi.yml?label=release
    :target: https://github.com/gsp-eeg/EEGraSP/actions
    :alt: GitHub Actions Workflow Release Status
 
-.. image:: https://img.shields.io/github/actions/workflow/status/gsp-eeg/EEGraSP/test-merge.yml?label=merge
+.. |testing| image:: https://img.shields.io/github/actions/workflow/status/gsp-eeg/EEGraSP/test-main.yml?label=testing
    :target: https://github.com/gsp-eeg/EEGraSP/actions
    :alt: GitHub Actions Workflow Testing Status
 
-.. image:: https://img.shields.io/github/actions/workflow/status/gsp-eeg/EEGraSP/test-main.yml?label=main
+.. |ruff| image:: https://img.shields.io/github/actions/workflow/status/gsp-eeg/EEGraSP/ruff.yml?label=ruff
    :target: https://github.com/gsp-eeg/EEGraSP/actions
-   :alt: GitHub Actions Workflow Testing Status
+   :alt: GitHub Actions Workflow Ruff Status
 
+.. |yapf| image:: https://img.shields.io/github/actions/workflow/status/gsp-eeg/EEGraSP/yapf.yml?label=yapf
+   :target: https://github.com/gsp-eeg/EEGraSP/actions
+   :alt: GitHub Actions Workflow Yapf Status
 
+.. |codespell| image:: https://img.shields.io/github/actions/workflow/status/gsp-eeg/EEGraSP/codespell.yml?label=codespell
+   :target: https://github.com/gsp-eeg/EEGraSP/actions
+   :alt: GitHub Actions Workflow Codespell Status
+
+.. |isort| image:: https://img.shields.io/github/actions/workflow/status/gsp-eeg/EEGraSP/isort.yml?label=isort
+   :target: https://github.com/gsp-eeg/EEGraSP/actions
+   :alt: GitHub Actions Workflow Isort Status
 
 This module is meant to be used as a tool for EEG signal analysis based on graph signal analysis methods. The development of this toolbox takes place in `GitHub <https://github.com/gsp-eeg/EEGraSP>`_.
 
