@@ -2,6 +2,10 @@
 EEGraSP: EEG GRaph Signal Processing
 =========================================
 
+This module is meant to be used as a tool for EEG signal analysis based on graph signal analysis methods. The development of this toolbox takes place in `GitHub <https://github.com/gsp-eeg/EEGraSP>`_.
+
+EEGraSP package uses other libraries like PyGSP2 and mne for most of the processing and graph signal analysis.
+
 +------------------------------------------------------------+
 ||doc|   |pypi|   |conda|   |pyversions|   |license|         |
 +------------------------------------------------------------+
@@ -52,10 +56,6 @@ EEGraSP: EEG GRaph Signal Processing
 .. |isort| image:: https://img.shields.io/github/actions/workflow/status/gsp-eeg/EEGraSP/isort.yml?label=isort
    :target: https://github.com/gsp-eeg/EEGraSP/actions
    :alt: GitHub Actions Workflow Isort Status
-
-This module is meant to be used as a tool for EEG signal analysis based on graph signal analysis methods. The development of this toolbox takes place in `GitHub <https://github.com/gsp-eeg/EEGraSP>`_.
-
-EEGraSP package uses other libraries like PyGSP2 and mne for most of the processing and graph signal analysis.
 
 Installation with pip (User Installation)
 -----------------------------------------
