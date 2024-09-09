@@ -16,11 +16,11 @@ EEGraSP: EEG GRaph Signal Processing
 .. |pypi| image:: https://img.shields.io/pypi/v/eegrasp
    :target: https://pypi.org/project/eegrasp
    :alt: PyPI - Version
-   
-.. |conda| image:: https://img.shields.io/conda/v/conda-forge/eegrasp
+
+.. |conda| image:: https://img.shields.io/conda/v/conda-forge/eegrasp?label=conda-forge
    :target: https://anaconda.org/conda-forge/eegrasp
    :alt: Conda Version
-   
+
 .. |license| image:: https://img.shields.io/github/license/gsp-eeg/EEGraSP
    :target: https://github.com/gsp-eeg/eegrasp/blob/main/LICENSE
    :alt: GitHub License
@@ -30,27 +30,27 @@ EEGraSP: EEG GRaph Signal Processing
    :alt: PyPI - Python Version
 
 .. |release| image:: https://img.shields.io/github/actions/workflow/status/gsp-eeg/EEGraSP/release-pypi.yml?label=release
-   :target: https://github.com/gsp-eeg/EEGraSP/actions
+   :target: https://github.com/gsp-eeg/EEGraSP/actions/workflows/release-pypi.yml
    :alt: GitHub Actions Workflow Release Status
 
 .. |testing| image:: https://img.shields.io/github/actions/workflow/status/gsp-eeg/EEGraSP/test-main.yml?label=testing
-   :target: https://github.com/gsp-eeg/EEGraSP/actions
+   :target: https://github.com/gsp-eeg/EEGraSP/actions/workflows/test-main.yml
    :alt: GitHub Actions Workflow Testing Status
 
 .. |ruff| image:: https://img.shields.io/github/actions/workflow/status/gsp-eeg/EEGraSP/ruff.yml?label=ruff
-   :target: https://github.com/gsp-eeg/EEGraSP/actions
+   :target: https://github.com/gsp-eeg/EEGraSP/actions/workflows/ruff.yml
    :alt: GitHub Actions Workflow Ruff Status
 
 .. |yapf| image:: https://img.shields.io/github/actions/workflow/status/gsp-eeg/EEGraSP/yapf.yml?label=yapf
-   :target: https://github.com/gsp-eeg/EEGraSP/actions
+   :target: https://github.com/gsp-eeg/EEGraSP/actions/workflows/yapf.yml
    :alt: GitHub Actions Workflow Yapf Status
 
 .. |codespell| image:: https://img.shields.io/github/actions/workflow/status/gsp-eeg/EEGraSP/codespell.yml?label=codespell
-   :target: https://github.com/gsp-eeg/EEGraSP/actions
+   :target: https://github.com/gsp-eeg/EEGraSP/actions/workflows/codespell.yml
    :alt: GitHub Actions Workflow Codespell Status
 
 .. |isort| image:: https://img.shields.io/github/actions/workflow/status/gsp-eeg/EEGraSP/isort.yml?label=isort
-   :target: https://github.com/gsp-eeg/EEGraSP/actions
+   :target: https://github.com/gsp-eeg/EEGraSP/actions/workflows/isort.yml
    :alt: GitHub Actions Workflow Isort Status
 
 This module is meant to be used as a tool for EEG signal analysis based on graph signal analysis methods. The development of this toolbox takes place in `GitHub <https://github.com/gsp-eeg/EEGraSP>`_.
@@ -90,7 +90,7 @@ Examples are provided in the `examples <https://github.com/gsp-eeg/EEGraSP/tree/
 
 * The ``electrode_distance.py`` script computes the electrode distance from the standard biosemi64 montage provided in the MNE package.
 
-* The ``ERP_reconstruction.py`` script computes an example ERP from a database provided by MNE. Then, one of the channels is eliminated and reconstructed through Tikhonov Regression. 
+* The ``ERP_reconstruction.py`` script computes an example ERP from a database provided by MNE. Then, one of the channels is eliminated and reconstructed through Tikhonov Regression.
 
 Basic steps for the package ussage are:
 
@@ -105,7 +105,7 @@ Basic steps for the package ussage are:
 Where:
 ``data`` is a 2-dimensional numpy array with first dimension being channels and second dimension being the samples of the data. The missing channel should be included with np.nan as each sample.
 ``eeg_pos`` is a 2-dimensional numpy array with the position of the electrodes. This can be obtained through the MNE library. See examples for more information about how to do this.
-``ch_names`` is a list of names for each channel. 
+``ch_names`` is a list of names for each channel.
 
 3. Compute the graph based on the electrodes distance. The parameters used to compute the graph need to be provided or estimated. In this case we will provide the parameters epsilon and sigma. To see how to find the best parameter for your data see ``ERP_reconstruction.py`` in the examples folder.
 
