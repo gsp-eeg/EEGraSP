@@ -1,0 +1,82 @@
+{
+    "title": "EEGraSP: EEG GRaph Signal Processing",
+    "description": "This module is meant to be used as a tool for EEG signal analysis based on graph signal analysis methods.",
+    "upload_type": "software",
+    "license": "MIT",
+    "access_right": "open",
+    "creators": [
+        {
+            "name": "Alejandro Weinstein",
+            "affiliations": [
+                {
+                    "id": "05510vn56",
+                    "name": "Federico Santa Mar\u00eda Technical University"
+                }
+            ],
+            "orcid": "0000-0003-1486-7003"
+        },
+        {
+            "name": "Lucas Cort\u00e9s",
+            "affiliations": [
+                {
+                    "id": "05510vn56",
+                    "name": "Federico Santa Mar\u00eda Technical University"
+                },
+                {
+                    "name": "Lanek SpA"
+                }
+            ],
+            "orcid": "0009-0005-0234-2770"
+        },
+        {
+            "name": "Julio Rodi\u00f1o",
+            "affiliations": [
+                {
+                    "name": "Brain Dynamics Laboratory"
+                }
+            ],
+            "orcid": "0000-0002-8916-6810"
+        },
+        {
+            "name": "Camilo Jara",
+            "affiliations": [
+                {
+                    "name": "FONDECYT REGULAR 1231132 grant, ANILLO ACT210053"
+                }
+            ],
+            "orcid": "0009-0008-9445-5423"
+        }
+    ],
+    "funding": [
+        {
+            "award": {
+                "number": "FONDECYT REGULAR 1231132",
+                "title": {
+                    "en": "Novel EEG Topography Analysis using Graph Signal Processing and Network Control Theory"
+                }
+            },
+            "funder": {
+                "id": "02ap3w078",
+                "name": "Agencia Nacional de Investigaci\u00f3n y Desarrollo"
+            }
+        },
+        {
+            "award": {
+                "identifiers": [
+                    {
+                        "identifier": "https://ac3e.usm.cl/",
+                        "scheme": "url"
+                    }
+                ],
+                "number": "Centro Basal FB0008",
+                "title": {
+                    "en": "Advanced Center for Electrical and Electronics Engineering"
+                }
+            },
+            "funder": {
+                "id": "02ap3w078",
+                "name": "Agencia Nacional de Investigaci\u00f3n y Desarrollo"
+            }
+        }
+    ]
+}

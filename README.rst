@@ -3,7 +3,7 @@ EEGraSP: EEG GRaph Signal Processing
 =========================================
 
 +------------------------------------------------------------+
-||doc|   |pypi|   |conda|   |pyversions|   |license|         |
+||doc|   |pypi|   |conda|   |pyversions|   |license| |zenodo||
 +------------------------------------------------------------+
 ||release|   |testing|   |ruff|  |yapf|  |codespell|  |isort||
 +------------------------------------------------------------+
@@ -52,6 +52,9 @@ EEGraSP: EEG GRaph Signal Processing
 .. |isort| image:: https://img.shields.io/github/actions/workflow/status/gsp-eeg/EEGraSP/isort.yml?label=isort
    :target: https://github.com/gsp-eeg/EEGraSP/actions/workflows/isort.yml
    :alt: GitHub Actions Workflow Isort Status
+
+.. |zenodo| image:: https://zenodo.org/badge/816844642.svg
+   :target: https://zenodo.org/doi/10.5281/zenodo.13122920
 
 This module is meant to be used as a tool for EEG signal analysis based on graph signal analysis methods. The development of this toolbox takes place in `GitHub <https://github.com/gsp-eeg/EEGraSP>`_.
 
