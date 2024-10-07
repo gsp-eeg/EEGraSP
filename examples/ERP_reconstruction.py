@@ -1,5 +1,5 @@
 r"""ERP Construction.
-================
+=====================
 
 Example on how to interpolate missing channels.
 """

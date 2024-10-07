@@ -1,4 +1,7 @@
-"""Example to plot EEG graph using EEGrasp package. The EEG graph is constructed using the
+r"""Plot EEG Graph.
+===================
+
+Example to plot EEG graph using EEGrasp package. The EEG graph is constructed using the
 electrode positions from the Biosemi 64 channel montage. The graph is plotted in 3D and topoplot
 formats.
 """

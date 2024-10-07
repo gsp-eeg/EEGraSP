@@ -1,5 +1,5 @@
 r"""Viz.
-===
+========
 
 Define default values and functions used for plotting function in eegrasp main module.
 """

@@ -1,5 +1,5 @@
 r"""Electrode Distance.
-==================
+=======================
 
 creation date: 21/03/2024
 author: jrodino14@gmail.com

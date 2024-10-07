@@ -1,5 +1,5 @@
 r"""Graph Creation.
-==============
+===================
 
 Contains the functions used in EEGrasp to create Graphs 
 """
@@ -27,6 +27,7 @@ def gaussian_kernel(x, sigma=0.1):
     Extending high-dimensional data analysis to networks and other
     irregular domains," in IEEE Signal Processing Magazine, vol. 30, no. 3,
     pp. 83-98, May 2013, doi: 10.1109/MSP.2012.2235192.
+    
     """
     return np.exp(-np.power(x, 2.) / (2. * np.power(float(sigma), 2)))
 

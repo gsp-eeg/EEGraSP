@@ -1,5 +1,5 @@
 r"""Make Gaussian Graph.
-===================
+========================
 
 This example demonstrates how to create a graph from EEG electrode positions using a gaussian
 kernel. The example uses the Biosemi 64 channel montage. The graph is created with two different

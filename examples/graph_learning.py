@@ -1,5 +1,5 @@
 r"""Graph Learning.
-==============
+===================
 
 Learn the graph from EEG signals using the algorithm proposed by
 Kalofolias et al. (2019) and implemented in pygsp2. This example
