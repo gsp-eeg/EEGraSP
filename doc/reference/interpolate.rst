@@ -1,0 +1,5 @@
+===========
+Interpolate
+===========
+
+.. automodule:: eegrasp.interpolate

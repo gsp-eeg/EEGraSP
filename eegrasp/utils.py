@@ -1,5 +1,5 @@
 r"""Utils.
-=====
+==========
 
 Utils functions used in EEGrasp.
 """

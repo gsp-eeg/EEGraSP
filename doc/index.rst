@@ -5,3 +5,4 @@
 
    Home <self>
    examples/index
+   reference/index

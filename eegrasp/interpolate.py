@@ -1,5 +1,5 @@
 r"""Interpolate.
-===========
+===================
 
 Contains the functions used in EEGrasp interpolate data
 """

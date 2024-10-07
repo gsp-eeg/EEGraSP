@@ -6,7 +6,7 @@
 
 Computation times
 =================
-**00:30.075** total execution time for 6 files **from all galleries**:
+**00:12.373** total execution time for 6 files **from all galleries**:
 
 .. container::
 
@@ -32,21 +32,21 @@ Computation times
    * - Example
      - Time
      - Mem (MB)
-   * - :ref:`sphx_glr_examples_eeg_graph_learning.py` (``../examples/eeg_graph_learning.py``)
-     - 00:15.940
-     - 876.8
    * - :ref:`sphx_glr_examples_graph_learning.py` (``../examples/graph_learning.py``)
-     - 00:12.757
-     - 868.3
-   * - :ref:`sphx_glr_examples_make_graph_gaussian.py` (``../examples/make_graph_gaussian.py``)
-     - 00:00.607
-     - 14.0
-   * - :ref:`sphx_glr_examples_electrode_distance.py` (``../examples/electrode_distance.py``)
-     - 00:00.595
-     - 24.9
-   * - :ref:`sphx_glr_examples_interpolate_channel.py` (``../examples/interpolate_channel.py``)
-     - 00:00.114
-     - 243.2
+     - 00:12.373
+     - 838.0
    * - :ref:`sphx_glr_examples_ERP_reconstruction.py` (``../examples/ERP_reconstruction.py``)
-     - 00:00.063
-     - 244.8
+     - 00:00.000
+     - 0.0
+   * - :ref:`sphx_glr_examples_electrode_distance.py` (``../examples/electrode_distance.py``)
+     - 00:00.000
+     - 0.0
+   * - :ref:`sphx_glr_examples_interpolate_channel.py` (``../examples/interpolate_channel.py``)
+     - 00:00.000
+     - 0.0
+   * - :ref:`sphx_glr_examples_make_graph_gaussian.py` (``../examples/make_graph_gaussian.py``)
+     - 00:00.000
+     - 0.0
+   * - :ref:`sphx_glr_examples_plot_eeg_graph.py` (``../examples/plot_eeg_graph.py``)
+     - 00:00.000
+     - 0.0

@@ -1,5 +1,5 @@
 r"""Interpolate Channel.
-===================
+========================
 
 Channel interpolation example.
 """
