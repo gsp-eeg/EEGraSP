@@ -18,7 +18,7 @@ lint:
 	yapf -ir .
 	ruff check .
 	codespell -w --skip="*.edf,*.js,*.css,doc,examples/datasets"
-	
+
 
 # Matplotlib doesn't print to screen. Also faster.
 export MPLBACKEND = agg
@@ -26,11 +26,9 @@ export MPLBACKEND = agg
 export DISPLAY = :99
 
 test:
-	Xvfb $$DISPLAY -screen 0 800x600x24 &
-	coverage run --branch --source eegrasp setup.py test
+	pytest --cov=eegrasp
 	coverage report
 	coverage html
-	killall Xvfb
 
 doc:
 	sphinx-build -b html -d doc/_build/doctrees doc doc/_build/html
