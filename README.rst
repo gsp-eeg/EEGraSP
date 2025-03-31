@@ -134,3 +134,4 @@ Still in development.
 Acknowledgments
 ---------------
 EEGraSP has been partly funded by FONDECYT REGULAR 1231132 grant, ANILLO ACT210053, and BASAL FB0008 grant.
+.
