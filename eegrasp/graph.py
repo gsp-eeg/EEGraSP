@@ -33,7 +33,7 @@ def gaussian_kernel(x, sigma=0.1):
 
 
 def compute_graph(W=None, epsilon=.5, sigma=.1, distances=None, graph=None,
-                  coordinates=None):
+                  coordinates=None, method='enn', k=5):
     """Parameters
     ----------
     W : numpy ndarray | None
@@ -46,26 +46,45 @@ def compute_graph(W=None, epsilon=.5, sigma=.1, distances=None, graph=None,
         adjacency matrix.
     sigma : float
         Sigma parameter for the gaussian kernel.
-    method: string
-        Options are: "NN" or "Gaussian". Nearest Neighbor or Gaussian
-        Kernel used based on the `self.W` matrix respectively depending on
-        the method used.
-
+    method : str, default="enn"
+        Method to determine graph connectivity.
+        - "enn": Use ε-neighbourhood with Gaussian kernel and distance thresholding.
+        - "knn": Use K-Nearest Neighbors. Each node connects to its `k` nearest neighbors with Gaussian weighting.
+    k : int, default=5
+        Number of neighbors to connect when using method="knn".
+        Ignored if method="epsilon".
+        
     Returns
     -------
     G: PyGSP2 Graph object.
     """
-    # If passed, used the W matrix
+
     if W is None:
-        # Check that there is a weight matrix is not a None
         if distances is None:
             raise TypeError(
                 'No distances found. Distances have to be computed if W is not provided'
             )
-        graph_weights = gaussian_kernel(distances, sigma=sigma)
-        graph_weights[distances > epsilon] = 0
-        np.fill_diagonal(graph_weights, 0)
+        
+        if method == "enn":
+            graph_weights = gaussian_kernel(distances, sigma=sigma)
+            graph_weights[distances > epsilon] = 0
+            np.fill_diagonal(graph_weights, 0)
+
+        elif method == "knn":
+            from sklearn.neighbors import NearestNeighbors
+            N = distances.shape[0]
+            graph_weights = np.zeros_like(distances)
+            nbrs = NearestNeighbors(n_neighbors=k+1).fit(distances)
+            _, indices = nbrs.kneighbors(distances)
+            for i in range(N):
+                for j in indices[i][1:]:  # skip self
+                    graph_weights[i, j] = gaussian_kernel(distances[i, j], sigma=sigma)
+
+        else:
+            raise ValueError(f"Unknown method '{method}'. Use 'enn' or 'knn'.")
+
         graph = graphs.Graph(graph_weights)
+
     else:
         graph_weights = W
         graph = graphs.Graph(W)
