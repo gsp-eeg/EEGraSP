@@ -87,9 +87,25 @@ Now you are ready to contribute!
 Usage
 -----
 
-Examples are provided in the `examples <https://github.com/gsp-eeg/EEGraSP/tree/main/examples>`_ folder of the repository:
+Data I/O
+--------
 
+The ``eegrasp.io`` module provides utilities to download and load data from public datasets.  
+It includes a caching mechanism to avoid redundant downloads and improve performance.
 
+Typical usage:
+
+.. code-block:: python
+
+    from eegrasp.io import load_data
+
+    # Load data with default cache enabled
+    raw = load_data(subject=1, runs=[4, 8, 12])
+
+    # To force a re-download:
+    raw = load_data(subject=1, runs=[4, 8, 12], use_cache=False)
+
+Examples are provided in the ``examples`` folder of the repository:
 
 * The ``electrode_distance.py`` script computes the electrode distance from the standard biosemi64 montage provided in the MNE package.
 
