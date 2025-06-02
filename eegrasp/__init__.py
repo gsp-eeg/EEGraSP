@@ -6,7 +6,7 @@ The :mod:`EEGraSP` package is mainly organized around the following modules.
 * :mod:`.viz` to visualize the EEGraSP graphs,
 * :mod:`.utils` for various utilities.
 * :mod:`.utils_examples` for examples applications.
-* :mod:`.io` to download and load EEG data with optional caching.
+* :mod:`.io` to download and load data with optional caching.
 
 EEGraSP is Python package for the analysis of EEG using Graph Signal Processing
 Techniques.
